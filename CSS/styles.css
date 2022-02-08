@@ -32,6 +32,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -604,9 +605,9 @@ a {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 
-.block__heading {
+/* .block__heading {
   text-align: center;
-}
+} */
 
 .container {
   max-width: 1140px;
@@ -671,5 +672,33 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+  text-align: left;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero {
+    padding-top: 0;
   }
 }
